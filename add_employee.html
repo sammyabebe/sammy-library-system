@@ -3,7 +3,7 @@
 <head>
     <title>Add Employee</title>
     <style>
-      body {
+       body {
             font-family: Arial, sans-serif;
         }
         .navbar {
@@ -20,22 +20,34 @@
         
         }
         .navbar a:hover {
-            background-color: #ddd;
-            color: black;
+            /* background-color: #ddd; */
+            color: rgba(0, 0, 0, 0.562);
         }
         .container {
-            padding: 20px 545px;
-            border: 1px solid green;
-            width: 300px;
+            /* padding: 20px 545px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid gray;
+            width: 600px;
+            margin: 25px 50px 75px 500px;
+            border-radius: 20px;
             
         }
         #Submit{
             padding: 10px 15px;
-            margin-left:20px;
+            
         }
         input{
             padding: 10px 55px;
-            border-radius:15px
+            border-radius:15px;
+            outline: none;
+            border: 2px solid gray;
+            
+        }
+        input:focus{
+            border: 1px solid rgb(9, 255, 9);
         }
     </style>
 </head>
