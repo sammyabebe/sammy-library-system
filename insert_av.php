@@ -29,6 +29,6 @@ if (mysqli_query($conn, $sql)) {
 
 mysqli_close($conn);
 
-header("Location: add_av.html");
+header("Location: add_av.php");
 exit();
 ?>
