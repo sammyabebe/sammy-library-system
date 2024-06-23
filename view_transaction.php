@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>View Transactions</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/images.jfif.jpg">
     <style>
 * {
     margin: 0;
@@ -15,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    /* background-color: #333; */
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -39,7 +40,7 @@
 }
 
 .navbar-links a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     padding: 14px 20px;
     text-align: center;
@@ -48,7 +49,7 @@
 }
 
 .navbar-links a:hover {
-    background-color: #575757;
+    background-color: #0056b3;
     color: #f0f0f0;
     border-radius: 4px;
 }

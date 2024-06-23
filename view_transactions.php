@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Transactions</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/images.jfif.jpg">
     <style>
         /* Basic reset */
         * {
@@ -16,24 +17,29 @@
         /* Container styling */
         .container {
             width: 100%;
-            max-width: 900px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 3.5px );
+-webkit-backdrop-filter: blur( 3.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
         }
 
         /* Individual item styling */
         .transactionItem {
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
+            width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 3.5px );
+-webkit-backdrop-filter: blur( 3.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
         }
 
         /* Hover effect for transaction items */

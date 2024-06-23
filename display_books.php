@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/images.jfif.jpg">
     <link rel="stylesheet" href="styles.css">
     <style>
          * {
@@ -18,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    /* background-color: #333; */
     padding: 10px 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -42,7 +43,7 @@
 }
 
 .navbar-links a {
-    color: #fff;
+    color: black;
     text-decoration: none;
     padding: 14px 20px;
     text-align: center;
@@ -51,7 +52,7 @@
 }
 
 .navbar-links a:hover {
-    background-color: #575757;
+    background-color: #0056b3;
     color: #f0f0f0;
     border-radius: 4px;
 }
@@ -93,13 +94,17 @@
             border-radius:15px
         }
         .bookItem {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 16px;
-    margin: 16px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
+            
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 3.5px );
+-webkit-backdrop-filter: blur( 3.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 /* Hover effect for book items */

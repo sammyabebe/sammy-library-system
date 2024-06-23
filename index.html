@@ -2,146 +2,266 @@
 <html>
 <head>
     <title>Library System</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/images.jfif.jpg">
     <style>
     /* Basic reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
 
-/* Navbar styling */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar .menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.navbar .menu-toggle .bar {
-    height: 3px;
-    width: 25px;
-    background-color: #fff;
-    margin: 4px 0;
-    transition: 0.4s;
-}
-
-.navbar-links {
-    display: flex;
-}
-
-.navbar-links a {
-    color: #fff;
-    text-decoration: none;
-    padding: 14px 20px;
-    text-align: center;
-    transition: background-color 0.3s, color 0.3s;
-    font-size: 16px;
-}
-
-.navbar-links a:hover {
-    background-color: #575757;
-    color: #f0f0f0;
-    border-radius: 4px;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .navbar .menu-toggle {
+    /* Navbar styling */
+    .navbar {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: #333; */
+        padding: 10px 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-toggle {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .menu-toggle .bar {
+        height: 3px;
+        width: 25px;
+        background-color: #fff;
+        margin: 4px 0;
+        transition: 0.4s;
     }
 
     .navbar-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
+        display: flex;
     }
 
     .navbar-links a {
-        padding: 10px;
-        font-size: 14px;
+        color: black;
+        text-decoration: none;
+        padding: 14px 20px;
+        text-align: center;
+        transition: background-color 0.3s, color 0.3s;
+        font-size: 16px;
     }
 
-    .navbar-links.active {
-        display: flex;
+    .navbar-links a:hover {
+        background-color: #0056b3;
+        color: #f0f0f0;
+        border-radius: 4px;
     }
-}
-     
-        /* Container styling */
-        .container {
-            position: relative;
-            text-align: center;
-            color: white;
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+        .menu-toggle {
+            display: flex;
         }
 
-        /* Background image styling */
-        .background-image {
+        .navbar-links {
+            display: none;
+            flex-direction: column;
             width: 100%;
-            height: 100vh;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-
-        /* Text overlay styling */
-        .text-overlay {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 800px;
-            width: 90%;
             text-align: center;
         }
 
-        /* Heading styling */
+        .navbar-links a {
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .navbar-links.active {
+            display: flex;
+        }
+    }
+    /* .nav-img{
+        position: relative;
+        border-radius: 50px;
+        width: 80px;
+        height: 0px;
+    } */
+
+    /* Container styling */
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+        top: 250px;
+    }
+
+    /* Background image styling */
+    .background-image {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+
+    /* Text overlay styling */
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.534);
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26);
+        max-width: 800px;
+        width: 90%;
+        text-align: center;
+    }
+
+    /* Heading styling */
+    h1 {
+        font-size: 2.5em;
+        color: #333;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    /* Paragraph styling */
+    p {
+        font-size: 1.2em;
+        color: #666;
+        line-height: 1.6;
+    }
+
+    /* Responsive design */
+    @media (max-width: 600px) {
+        .text-overlay {
+            padding: 20px;
+        }
+
         h1 {
-            font-size: 2.5em;
-            color: #333;
-            margin-bottom: 20px;
-            line-height: 1.2;
+            font-size: 1.8em;
         }
 
-        /* Paragraph styling */
         p {
-            font-size: 1.2em;
-            color: #666;
-            line-height: 1.6;
+            font-size: 1em;
+        }
+    }
+
+    .img {
+        border-radius: 90px;
+    }
+
+    .rubberBand {
+        -webkit-animation-name: rubberBand;
+        animation-name: rubberBand;
+    }
+
+    @-webkit-keyframes rubberBand {
+        from {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
         }
 
-        /* Responsive design */
-        @media (max-width: 600px) {
-            .text-overlay {
-                padding: 20px;
-            }
-
-            h1 {
-                font-size: 1.8em;
-            }
-
-            p {
-                font-size: 1em;
-            }
+        30% {
+            -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
         }
+
+        40% {
+            -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+        }
+
+        50% {
+            -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+        }
+
+        65% {
+            -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+        }
+
+        75% {
+            -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+        }
+
+        to {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+    }
+
+    @keyframes rubberBand {
+        from {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+
+        30% {
+            -webkit-transform: scale3d(1.25, 0.75, 1);
+            transform: scale3d(1.25, 0.75, 1);
+        }
+
+        40% {
+            -webkit-transform: scale3d(0.75, 1.25, 1);
+            transform: scale3d(0.75, 1.25, 1);
+        }
+
+        50% {
+            -webkit-transform: scale3d(1.15, 0.85, 1);
+            transform: scale3d(1.15, 0.85, 1);
+        }
+
+        65% {
+            -webkit-transform: scale3d(0.95, 1.05, 1);
+            transform: scale3d(0.95, 1.05, 1);
+        }
+
+        75% {
+            -webkit-transform: scale3d(1.05, 0.95, 1);
+            transform: scale3d(1.05, 0.95, 1);
+        }
+
+        to {
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+    }
+
+    img:hover {
+        -webkit-animation: rubberBand 1s;
+        animation: rubberBand 1s;
+    }
+    .get-start-btn {
+    display: inline-block;
+    padding: 20px 60px;
+    margin-top: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.get-start-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.get-start-btn:active {
+    background-color: #004080;
+    transform: scale(1);
+}
     </style>
 </head>
 <body>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
     <div class="navbar">
         <div class="menu-toggle" id="mobile-menu">
             <span class="bar"></span>
@@ -149,6 +269,7 @@
             <span class="bar"></span>
         </div>
         <div class="navbar-links" id="navbar-links">
+            <!-- <img class="nav-img" src="img/images.jfif.jpg" alt="Library Image"> -->
             <a href="index.html">Home</a>
             <a href="add_book.html">Add Book</a>
             <a href="add_av.php">Add Audio Visual</a>
@@ -162,13 +283,43 @@
     </div>
 
     <div class="container">
-        <img src="img/images.jfif.jpg" alt="">
-            <div class="parent">
-        <h1>Welcome to the Library System</h1>
-        <h1>WDDBA Level 5 Project prepared by Samuiel Abebe And Netanet Micheael For M.s Adanech </h1>
-        <p>Select an option from the navbar to proceed.</p>
-     </div>
+        <img class="img" src="img/images.jfif.jpg" alt="Library Image">
+        <div class="text-overlay">
+            <h1>Welcome to the Library System</h1>
+            <h1>WDDBA Level 5 Project prepared by Samuiel Abebe And Netanet Micheael For M.s Adanech</h1>
+            <a href="add_book.html"> <button type="button" class="get-start-btn" >GetStart</button></a>
+            <p>Select an option from the navbar to proceed Or Click GetStarted.</p>
+        </div>
     </div>
-    <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navbarLinks = document.getElementById('navbar-links');
+
+        mobileMenu.addEventListener('click', function () {
+            navbarLinks.classList.toggle('active');
+        });
+    });
+    </script>
 </body>
 </html>
