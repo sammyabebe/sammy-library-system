@@ -103,14 +103,14 @@
         </div>
         <div class="navbar-links" id="navbar-links">
             <a href="index.html">Home</a>
-            <a href="add_book.html">Add Book</a>
+            <a href="add_book.php">Add Book</a>
             <a href="add_av.php">Add Audio Visual</a>
-            <a href="add_employee.html">Add Employee</a>
-            <a href="display_books.php">View Books</a>
-            <a href="view_av.php">View Audio Visuals</a>
-            <a href="view_employees.php">View Employees</a>
-            <a href="view_transaction.php">View Transactions</a>
-            <a href="add_transaction.html">Add Transaction</a>
+            <a href="add_employee.php">Add Employee</a>
+            <!-- <a href="display_books.php">View Books</a> -->
+            <!-- <a href="view_av.php">View Audio Visuals</a> -->
+            <!-- <a href="view_employees.php">View Employees</a> -->
+            <!-- <a href="view_transaction.php">View Transactions</a> -->
+            <a href="add_transaction.php">Add Transaction</a>
         </div>
     </div>
 

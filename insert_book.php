@@ -30,6 +30,6 @@ if (mysqli_query($conn, $sql)) {
 
 mysqli_close($conn);
 
-header("Location: add_book.html");
+header("Location: add_book.php");
 exit();
 ?>

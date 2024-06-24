@@ -26,6 +26,6 @@ if (mysqli_query($conn, $sql)) {
 
 mysqli_close($conn);
 
-header("Location: add_employee.html");
+header("Location: add_employee.php");
 exit();
 ?>

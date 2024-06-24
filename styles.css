@@ -1,14 +1,8 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
 }
 
-.container {
-    width: 50%;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+
 
 h1, h2 {
     text-align: center;
@@ -71,19 +65,4 @@ button:hover {
 .navbar a:hover {
     background-color: #ddd;
     color: black;
-}
-.container {
-    padding: 20px 545px;
-    border: 1px solid green;
-    width: 300px;
-    
-}
-
-#Submit{
-    padding: 10px 15px;
-    margin-left:20px;
-}
-input{
-    padding: 10px 55px;
-    border-radius:15px
-}
+} */

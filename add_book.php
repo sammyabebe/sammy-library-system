@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Add Employee</title>
+    <title>Add Book</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/images.jfif.jpg">
     <style>
- * {
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -77,8 +77,6 @@
     }
 }
    
-
-/* Container styling */
 .container {
     width: 100%;
     max-width: 600px;
@@ -90,6 +88,8 @@ backdrop-filter: blur( 3.5px );
 -webkit-backdrop-filter: blur( 3.5px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
+position: relative;
+right: 400px;
 }
 
 /* Heading styling */
@@ -112,13 +112,24 @@ label {
 }
 
 /* Input styling */
-input[type="text"], input[type="submit"] {
+input[type="text"], input[type="number"], input[type="submit"] {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 1em;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Remove number spinner */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 /* Submit button styling */
@@ -139,8 +150,8 @@ input[type="submit"]:hover {
     .container {
         padding: 15px;
     }
-    
-    input[type="text"], input[type="submit"] {
+
+    input[type="text"], input[type="number"], input[type="submit"] {
         font-size: 0.9em;
     }
 }
@@ -155,25 +166,39 @@ input[type="submit"]:hover {
         </div>
         <div class="navbar-links" id="navbar-links">
             <a href="index.html">Home</a>
-            <a href="add_book.html">Add Book</a>
+            <a href="add_book.php">Add Book</a>
             <a href="add_av.php">Add Audio Visual</a>
-            <a href="add_employee.html">Add Employee</a>
-            <a href="display_books.php">View Books</a>
-            <a href="view_av.php">View Audio Visuals</a>
-            <a href="view_employees.php">View Employees</a>
-            <a href="view_transaction.php">View Transactions</a>
-            <a href="add_transaction.html">Add Transaction</a>
+            <a href="add_employee.php">Add Employee</a>
+            <!-- <a href="display_books.php">View Books</a> -->
+            <!-- <a href="view_av.php">View Audio Visuals</a> -->
+            <!-- <a href="view_employees.php">View Employees</a> -->
+            <!-- <a href="view_transaction.php">View Transactions</a> -->
+            <a href="add_transaction.php">Add Transaction</a>
         </div>
     </div>
+
     <div class="container">
-        <h2>Add a New Employee</h2>
-        <form action="insert_employee.php" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="sex">Sex:</label><br>
-            <input type="text" id="sex" name="sex"><br><br>
-            <input type="submit" value="Submit">
+        <h2>Add a New Book</h2>
+        <form action="insert_book.php" method="post">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" required><br><br>
+            <label for="author">Author:</label><br>
+            <input type="text" id="author" name="author" required><br><br>
+            <label for="category">Category:</label><br>
+            <input type="text" id="category" name="category"><br><br>
+            <label for="publisher">Publisher:</label><br>
+            <input type="text" id="publisher" name="publisher"><br><br>
+            <label for="publicationYear">Publication Year:</label><br>
+            <input type="number" id="publicationYear" name="publicationYear" required><br><br>
+            <label for="isbn">ISBN:</label><br>
+            <input type="text" id="isbn" name="isbn" required><br><br>
+            <input type="submit" value="Submit" id="submit">
         </form>
     </div>
+    <?php
+    include 'display_books.php'; 
+    ?>
+
+
 </body>
 </html>

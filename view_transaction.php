@@ -77,20 +77,20 @@
     }
 }
     
-        .container {
-            /* padding: 20px 545px; */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border: 3px solid gray;
-            width: 600px;
-            margin: 25px 50px 75px 500px;
-            border-radius: 20px;
-            
+.container {
+            width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+background: rgba( 255, 255, 255, 0.2 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 3.5px );
+-webkit-backdrop-filter: blur( 3.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
         }
-        #Submit{
-            padding: 10px 15px;
+        /* #Submit{ */
+            /* padding: 10px 15px;
             background:green;
             color: #fff;
             margin-left:90px;
@@ -111,7 +111,11 @@
         }
         input:focus{
             border: 1px solid rgb(9, 255, 9);
-        }
+        } */
+         .h2{
+            position: absolute;
+            left: 950px;
+         }
     </style>
 </head>
 <body>
@@ -121,21 +125,21 @@
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
-        <div class="navbar-links" id="navbar-links">
+        <!-- <div class="navbar-links" id="navbar-links">
             <a href="index.html">Home</a>
-            <a href="add_book.html">Add Book</a>
+            <a href="add_book.php">Add Book</a>
             <a href="add_av.php">Add Audio Visual</a>
-            <a href="add_employee.html">Add Employee</a>
-            <a href="display_books.php">View Books</a>
-            <a href="view_av.php">View Audio Visuals</a>
-            <a href="view_employees.php">View Employees</a>
-            <a href="view_transaction.php">View Transactions</a>
-            <a href="add_transaction.html">Add Transaction</a>
-        </div>
+            <a href="add_employee.php">Add Employee</a>
+            <a href="display_books.php">View Books</a> -->
+            <!-- <a href="view_av.php">View Audio Visuals</a> -->
+            <!-- <a href="view_employees.php">View Employees</a> -->
+            <!-- <a href="view_transaction.php">View Transactions</a> -->
+            <!-- <a href="add_transaction.php">Add Transaction</a> -->
+        </div> 
     </div>
-    <div class="container">
-        <h2>Transactions</h2>
+    <!-- <div class="container"> -->
+        <h2 class="h2">Transaction List</h2>
         <?php include 'view_transactions.php'; ?>
-    </div>
+    <!-- </div> -->
 </body>
 </html>
