@@ -110,16 +110,29 @@
             max-width: 600px;
             margin: 20px auto;
             text-align: center;
+            position: relative;
+            bottom: 580px;
+            z-index: 5;
         }
 
         .search-input {
-            padding: 10px;
+            padding: 20px;
             width: 60%;
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 5px;
             margin-right: 10px;
         }
+
+        /* .search-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        } */
 
         .search-btn:hover {
             background-color: #45a049;
